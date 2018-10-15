@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+    <script src="vue-myPlugin.js"></script>
+</head>
+<body>
+    <div id="test">
+        <p v-my-directive="msg"></p>
+
+    </div>
+</body>
+</html>
+<script>
+    Vue.use(MyPlugin);
+    Vue.myGlobalMethod();
+    const vm = new Vue({
+        el:"#test",
+        data:{
+            msg:"I Like You!"
+        }
+    })
+    vm.$myMethod();
+</script>

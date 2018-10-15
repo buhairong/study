@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        姓：<input type="text" placeholder="First Name" v-model="firstName" ><br>
+        名：<input type="text" placeholder="Last Name" v-model="lastName" ><br>
+        姓名1（单向）：<input type="text" placeholder="Full Name1" v-model="fullName1" ><br>
+        姓名2（单向）：<input type="text" placeholder="Full Name2" v-model="fullName2" ><br>
+        姓名3（双向）：<input type="text" placeholder="Full Name3" v-model="fullName3"><br>
+
+        <p>{{fullName1}}</p>
+        <p>{{fullName1}}</p>
+        <p>{{fullName1}}</p>
+
+    </div>
+</body>
+</html>
+<script>
+    const vm = new Vue({
+        el:"#app",
+        data:{
+            firstName:'A',
+            lastName:"B",
+            fullName2:"A B"
+        },
+        computed:{
+            fullName1(){
+                return this.firstName + " " + this.lastName
+            },
+            fullName3:{
+                get(){
+                    return this.firstName + " " + this.lastName;
+                },
+                set(value){
+                    const names = value.split(" ");
+                    this.firstName = names[0];
+                    this.lastName = names[1];
+                }
+            }
+        },
+        watch:{
+            firstName:function(newVal,oldVal){
+                this.fullName2 = newVal + " " + this.lastName
+            }
+        }
+    })
+
+    vm.$watch("lastName",function(newVal,oldVal){
+        this.fullName2 = this.firstName + " " + newVal
+    });
+
+</script>

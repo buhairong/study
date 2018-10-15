@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>{{msg}}</p>
+        <p>{{msg.toUpperCase()}}</p>
+        <p v-text="msg"></p>
+        <p v-html="msg"></p>
+
+        <img v-bind:src="imgUrl">
+        <img :src="imgUrl">
+
+        <button v-on:click="test">test1</button>
+        <button @click="test2(msg)">test2</button>
+
+    </div>
+</body>
+</html>
+<script>
+    const vm = new Vue({
+        el:"#app",
+        data:{
+            msg:'<a href="http://www.atguigu.com">I Will Back!</a>',
+            imgUrl:"https://cn.vuejs.org/images/logo.png"
+        },
+        methods:{
+            test(){
+                alert("hehe")
+            },
+            test2(content){
+                alert(content)
+            }
+        }
+    })
+</script>

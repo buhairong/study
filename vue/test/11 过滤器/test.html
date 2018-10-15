@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+    <script src="https://cdn.bootcss.com/moment.js/2.21.0/moment.js"></script>
+</head>
+<body>
+    <div id="test">
+        <p>{{date}}</p>
+        <p>{{date | dateString}}</p>
+        <p>{{date | dateString(YYYY-MM-DD)}}</p>
+        <p>{{date | dateString(HH:mm:ss)}}</p>
+
+    </div>
+</body>
+</html>
+<script>
+    Vue.filter("dateString",function(value,format="YYYY-MM-DD HH:mm:ss"){
+
+        return moment(value).format(format);
+    })
+
+    new Vue({
+        el:"#test",
+        data:{
+            date:new Date()
+        }
+    })
+</script>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+    <style>
+        .aClass{
+            color:red;
+        }
+        .bClass{
+            color:blue;
+        }
+        .cClass{
+            font-size:30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo">
+        <p class="cClass" :class="a">bbbb</p>
+        <p :class="{aClass:isA,bClass:isB}">bbbb</p>
+        <p :class="['aClass','cClass']">bbbb</p>
+        <button @click="update">更新</button>
+
+        <p :style="{color:activeColor,fontSize:fontSize + 'px'}">nnnnn</p>
+    </div>
+</body>
+</html>
+<script>
+    new Vue({
+        el:"#demo",
+        data:{
+            a:"aClass",
+            isA:true,
+            isB:false,
+            activeColor:"red",
+            fontSize:20
+        },
+        methods:{
+            update(){
+                this.a = "bClass";
+                this.isA = false;
+                this.isB = true;
+                this.activeColor = "green";
+                this.fontSize=30;
+            }
+        }
+    })
+</script>

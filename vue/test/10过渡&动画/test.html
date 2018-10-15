@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+    <style>
+        .fade-enter-active,.fade-leave-active{
+            transition:opacity 1s;
+        }
+        .fade-enter,.fade-leave-to{
+            opacity:0;
+        }
+
+        .move-enter-active{
+            transition:all 1s;
+        }
+        .move-leave-active{
+            ransition:all 3s;
+        }
+        .move-enter,.move-leave-to{
+            opacity:0;
+            transform:translateX(20px);
+        }
+
+        .bounce-enter-active{
+            animation:bounce-in 1s;
+        }
+        .bounce-leave-active{
+            animation:bounce-in 1s reverse;
+        }
+        @keyframes bounce-in{
+            0%{
+                transform:scale(0);
+            }
+            50%{
+                transform:scale(1.5);
+            }
+            100%{
+                transform:scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="test">
+        <button @click="isShow=!isShow">toggle</button>
+        <transition name="fade">
+            <p v-show="isShow">hello</p>
+        </transition>
+
+    </div>
+
+    <div id="test1">
+        <button @click="isShow=!isShow">toggle</button>
+        <transition name="move">
+            <p v-show="isShow">hello</p>
+        </transition>
+
+    </div>
+
+    <div id="test2">
+        <button @click="isShow=!isShow">toggle</button>
+        <br>
+        <transition name="bounce">
+            <p v-show="isShow" style="display:inline-block;">Lorem ipsun</p>
+        </transition>
+
+    </div>
+</body>
+</html>
+<script>
+    new Vue({
+        el:"#test",
+        data(){
+            return {
+                isShow:true
+            }
+        }
+    })
+
+    new Vue({
+        el:"#test1",
+        data(){
+            return {
+                isShow:true
+            }
+        }
+    })
+
+    new Vue({
+        el:"#test2",
+        data(){
+            return {
+                isShow:true
+            }
+        }
+    })
+</script>

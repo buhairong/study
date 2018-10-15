@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+    <style>
+        [v-cloak]{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <div id="test">
+        <p ref="content">atguigu.com</p>
+        <button @click="hint">提示</button>
+        <p v-cloak>{{msg}}</p>
+    </div>
+
+    <div id="test1">
+        <p v-upper-text="msg1"></p>
+        <p v-lower-text="msg1"></p>
+    </div>
+
+    <div id="test2">
+        <p v-upper-text="msg2"></p>
+        <p v-lower-text="msg2"></p>
+    </div>
+</body>
+</html>
+<script>
+
+    new Vue({
+        el:"#test",
+        data:{
+            msg:"尚硅谷"
+        },
+        methods:{
+            hint(){
+                alert(this.$refs.content.textContent);
+            }
+        }
+    })
+
+    Vue.directive("upper-text",function(el,binding){
+        el.textContent = binding.value.toUpperCase();
+    })
+
+    new Vue({
+        el:"#test1",
+        data:{
+            msg1:"NBA I Love This Game!"
+        },
+        directives:{
+            "lower-text":function(el,binding){
+                el.textContent = binding.value.toLowerCase();
+            }
+        }
+    })
+
+    new Vue({
+        el:"#test2",
+        data:{
+            msg2:"Just Do It!"
+        }
+    })
+</script>

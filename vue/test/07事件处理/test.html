@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="demo">
+        <button @click="test1">test1</button>
+        <button @click="test2('abc')">test2</button>
+        <button @click="test3">test3</button>
+        <button @click="test4(123,$event)">test4</button>
+
+        <div style="width:200px;height:200px;background: red" @click="test5">
+            <div style="width:100px;height:100px;background: blue" @click.stop="test6"></div>
+        </div>
+
+        <a href="http://www.baidu.com" @click.prevent="test7">去百度</a>
+
+        <input type="text" @keyup.enter="test8">
+
+    </div>
+</body>
+</html>
+<script>
+    new Vue({
+        el:"#demo",
+        data:{
+
+        },
+        methods:{
+            test1(){
+                alert("test1");
+            },
+            test2(str){
+                alert(str);
+            },
+            test3(event){
+                alert(event.target.innerHTML);
+            },
+            test4(str,event){
+                alert(str + "----" + event.target.innerHTML);
+            },
+            test5(){
+                alert("test5");
+            },
+            test6(){
+                alert("test6");
+            },
+            test7(){
+                alert("test7");
+            },
+            test8(event){
+                alert(event.target.value);
+            }
+        }
+    })
+</script>

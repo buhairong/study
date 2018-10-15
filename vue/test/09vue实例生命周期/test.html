@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="test">
+        <button @click="destoryVM">destroy vm</button>
+        <p v-show="isShow">尚硅谷IT教育</p>
+    </div>
+</body>
+</html>
+<script>
+    new Vue({
+        el:"#test",
+        data:{
+            isShow:true
+        },
+        beforeCreate(){
+            console.log("beforeCreate");
+        },
+        created(){
+            console.log("create");
+        },
+        beforeMount(){
+            console.log("beforeMounte");
+        },
+        mounted(){
+            this.intervalId=setInterval(()=>{
+                console.log("---");
+                this.isShow = !this.isShow;
+            },1000)
+        },
+        beforeUpdate(){
+            console.log("beforeUpdate");
+        },
+        updated(){
+            console.log("updated");
+        },
+        beforeDestroy(){
+            console.log("beforeDestroy");
+            clearInterval(this.intervalId);
+        },
+        destroyed(){
+            console.log("destroyed");
+
+        },
+        methods:{
+            destoryVM(){
+                this.$destroy();
+            }
+        }
+    })
+</script>
