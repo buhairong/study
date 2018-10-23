@@ -16,6 +16,18 @@
         img{
             width:100%;
         }
+        .damu-thumbnail img{
+            width:auto;
+        }
+        .damu-threeC{
+            margin-top:50px;
+        }
+        .damu-hr{
+            margin:50px auto;
+        }
+        .damu-hr hr{
+            border:2px solid deeppink;
+        }
         .damu-carousel{
             margin-top:50px;
         }
@@ -55,14 +67,14 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">特点 <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Chrome</a></li>
-                            <li><a href="#">Firefox</a></li>
-                            <li><a href="#">Safari</a></li>
-                            <li><a href="#">Opear</a></li>
-                            <li><a href="#">IE</a></li>
+                            <li><a href="#chrome">Chrome</a></li>
+                            <li><a href="#firefox">Firefox</a></li>
+                            <li><a href="#safari">Safari</a></li>
+                            <li><a href="#opera">Opear</a></li>
+                            <li><a href="#ie">IE</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">关于</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">关于</a></li>
                 </ul>
 
             </div><!-- /.navbar-collapse -->
@@ -123,5 +135,157 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+
+    <div class="container damu-threeC">
+        <div class="row">
+            <div class="col-md-4 damu-thumbnail text-center">
+                <div class="thumbnail">
+                    <img src="images/chrome-logo-small.jpg">
+                    <div class="caption">
+                        <h3>Chrome</h3>
+                        <p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器。</p>
+                        <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 damu-thumbnail text-center">
+                <div class="thumbnail">
+                    <img src="images/firefox-logo-small.jpg">
+                    <div class="caption">
+                        <h3>Firefox</h3>
+                        <p>Mozilla Firefox，中文名通常称为“火狐”或“火狐浏览器”，是一个开源网页浏览器。</p>
+                        <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 damu-thumbnail text-center">
+                <div class="thumbnail">
+                    <img src="images/chrome-logo-small.jpg">
+                    <div class="caption">
+                        <h3>Safari</h3>
+                        <p>Safari，是苹果计算机的最新操作系统Mac OS X中的浏览器。</p>
+                        <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container damu-hr">
+        <hr>
+    </div>
+
+    <div class="container" id="damu-tab">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist" id="damu-list">
+            <li role="presentation" class="active"><a href="#chrome" aria-controls="chrome" role="tab" data-toggle="tab">chrome</a></li>
+            <li role="presentation"><a href="#firefox" aria-controls="firefox" role="tab" data-toggle="tab">firefox</a></li>
+            <li role="presentation"><a href="#safari" aria-controls="safari" role="tab" data-toggle="tab">safari</a></li>
+            <li role="presentation"><a href="#opera" aria-controls="opera" role="tab" data-toggle="tab">opera</a></li>
+            <li role="presentation"><a href="#ie" aria-controls="ie" role="tab" data-toggle="tab">ie</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="chrome">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h3>IE你懂的</h3>
+                            Internet Explorer，原称Microsoft Internet Explorer(6版本以前)和Windows Internet Explorer(7，8，9，10版本)， 简称IE，是美国微软公司推出的一款网页浏览器。它采用的排版引擎(俗称内核)为Trident。
+                        </div>
+                        <div class="col-md-5">
+                            <img src="images/chrome-logo.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="firefox">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/firefox-logo.jpg">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>IE你懂的</h3>
+                            Internet Explorer，原称Microsoft Internet Explorer(6版本以前)和Windows Internet Explorer(7，8，9，10版本)， 简称IE，是美国微软公司推出的一款网页浏览器。它采用的排版引擎(俗称内核)为Trident。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="safari">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/safari-logo.jpg">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>IE你懂的</h3>
+                            Internet Explorer，原称Microsoft Internet Explorer(6版本以前)和Windows Internet Explorer(7，8，9，10版本)， 简称IE，是美国微软公司推出的一款网页浏览器。它采用的排版引擎(俗称内核)为Trident。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="opera">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/opera-logo.jpg">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>IE你懂的</h3>
+                            Internet Explorer，原称Microsoft Internet Explorer(6版本以前)和Windows Internet Explorer(7，8，9，10版本)， 简称IE，是美国微软公司推出的一款网页浏览器。它采用的排版引擎(俗称内核)为Trident。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="ie">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/ie-logo.jpg">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>IE你懂的</h3>
+                            Internet Explorer，原称Microsoft Internet Explorer(6版本以前)和Windows Internet Explorer(7，8，9，10版本)， 简称IE，是美国微软公司推出的一款网页浏览器。它采用的排版引擎(俗称内核)为Trident。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        &copy;尚硅谷
+    </div>
+
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+<script>
+    $(".dropdown-menu li a").click(function(e){
+        e.preventDefault();
+        var href = $(this).attr("href");
+        console.log(href);
+        $("#damu-list li a[href="+(href)+"]").tab("show");
+        $(document).scrollTop($("#damu-tab").offset().top);
+    })
+</script>
