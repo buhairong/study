@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body style="margin:100px;">
+
+    <div class="modal fade" id="myModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <h4 class="modal-title">会员登录</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="col-md-4">1</div>
+                        <div class="col-md-4">2</div>
+                        <div class="col-md-4">3</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default">注册</button>
+                    <button class="btn btn-primary">登录</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">点击弹窗</button>
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" data-backdrop="false">点击弹窗</button>
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" data-backdrop="static">点击弹窗</button>
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" data-keyboard="false">点击弹窗</button>
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" data-show="false">点击弹窗</button>
+    <button class="btn btn-primary btn-lg" data-toggle="modal" href="#myModal">点击弹窗</button>
+
+    <button class="btn btn-primary btn-lg" id="btn">点击弹窗</button>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('#btn').click(function(){
+            $('#myModal').modal('show');
+        })
+
+        $('#myModal').modal({
+            show:false,
+            remote:"01_介绍.html"
+        });
+
+        $('#myModal').on('show.bs.modal',function(){
+            alert('当调用show方法时立即触发！');
+        })
+
+        $('#myModal').on('shown.bs.modal',function(){
+            alert('当弹窗完全出现再执行！');
+        })
+
+        $('#myModal').on('hide.bs.modal',function(){
+            alert('当调用hide方法时立即触发！');
+        })
+
+        $('#myModal').on('hidden.bs.modal',function(){
+            alert('当模态框完全关闭后触发！');
+        })
+
+        $('#myModal').on('loaded.bs.modal',function(){
+            alert('当远程加载后触发！');
+        })
+    </script>
+</body>
+</html>
