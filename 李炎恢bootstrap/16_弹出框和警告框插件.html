@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        #view{
+            width:300px;
+            height:100px;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body style="margin:200px;">
+    <div id="view">
+        <button id="b" class="btn btn-danger btn-lg"
+                data-toggle="popover"
+                title="Bootstrap"
+                data-content="Bootstrap是Twitter推出的一个用于前端开发的开源工具包。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。目前，Bootstrap最新版本为3.0 。Bootstrap中文网致力于为广大国内开发者提供详尽的中文文档、代码实例等，助力开发者掌握并使用这一框架。"
+                data-placement="right"
+        >
+            点击弹出/隐藏弹出框
+        </button>
+
+
+    </div>
+
+    <button id="btn">按钮</button>
+
+    <div class="alert alert-warning fade in">
+        <button class="close" data-dismiss="alert"><span>&times;</span></button>
+        <p>您的浏览器不支持！</p>
+    </div>
+
+    <div id="alert" class="alert alert-warning fade in">
+        <button class="close"><span>&times;</span></button>
+        <p>您的浏览器不支持！</p>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $("#b").popover({
+            viewport:{
+                selector:'#view',
+                padding:10
+            }
+        });
+
+        $("#btn").on("click",function(){
+            $("#b").popover('toggle');
+        })
+
+        $(".close").on("click",function(){
+            $('#alert').alert('close');
+        })
+    </script>
+</body>
+</html>

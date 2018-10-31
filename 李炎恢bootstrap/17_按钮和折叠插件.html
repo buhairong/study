@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+
+    </style>
+</head>
+<body style="margin:200px;">
+
+    <button class="btn btn-default" data-toggle="button" autocomplete="off">
+        按钮
+    </button>
+
+    <div class="btn-group" data-toggle="buttons">
+        <label for="" class="btn btn-primary active">
+            <input type="radio" name="sex" value="男" checked>男
+        </label>
+        <label for="" class="btn btn-primary">
+            <input type="radio" name="sex" value="女">女
+        </label>
+    </div>
+
+    <div class="btn-group" data-toggle="buttons">
+        <label for="" class="btn btn-primary">
+            <input type="checkbox" name="fa" value="体育" checked>体育
+        </label>
+        <label for="" class="btn btn-primary">
+            <input type="checkbox" name="fa" value="音乐">音乐
+        </label>
+        <label for="" class="btn btn-primary">
+            <input type="checkbox" name="fa" value="艺术">艺术
+        </label>
+        <label for="" class="btn btn-primary">
+            <input type="checkbox" name="fa" value="电脑">电脑
+        </label>
+    </div>
+
+    <button id="btn" class="btn btn-primary" data-loading-text="Loading..." autocomplete="off">开始上传</button>
+
+    <button id="btn1" class="btn btn-default" autocomplete="off">
+        按钮
+    </button>
+
+    <br>
+
+    <button class="btn btn-primary" data-toggle="collapse" data-target="#content">Bootstrap</button>
+    <div class="collapse" id="content">
+        <div class="well">
+            Bootstrap是Twitter推出的一个用于前端开发的开源工具包。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。目前，Bootstrap最新版本为3.0 。Bootstrap中文网致力于为广大国内开发者提供详尽的中文文档、代码实例等，助力开发者掌握并使用这一框架。
+        </div>
+    </div>
+
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#collapseOne" data-toggle="collapse" data-parent="#accordion">第一部分链接</a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    第一部分内容
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#collapsetwo" data-toggle="collapse" data-parent="#accordion">第二部分链接</a>
+                </h4>
+            </div>
+            <div id="collapsetwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    第二部分内容
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#collapsethree" data-toggle="collapse" data-parent="#accordion">第三部分链接</a>
+                </h4>
+            </div>
+            <div id="collapsethree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    第三部分内容
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#collapsefour" data-toggle="collapse" data-parent="#accordion">第四部分链接</a>
+                </h4>
+            </div>
+            <div id="collapsefour" class="panel-collapse collapse">
+                <div class="panel-body">
+                    第四部分内容
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group" id="accordion1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#collapseOne1" data-toggle="collapse">第一部分链接</a>
+                </h4>
+            </div>
+            <div id="collapseOne1" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    第一部分内容
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#collapsetwo1" data-toggle="collapse">第二部分链接</a>
+                </h4>
+            </div>
+            <div id="collapsetwo1" class="panel-collapse collapse">
+                <div class="panel-body">
+                    第二部分内容
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#collapsethree1" data-toggle="collapse">第三部分链接</a>
+                </h4>
+            </div>
+            <div id="collapsethree1" class="panel-collapse collapse">
+                <div class="panel-body">
+                    第三部分内容
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a href="#collapsefour1" data-toggle="collapse">第四部分链接</a>
+                </h4>
+            </div>
+            <div id="collapsefour1" class="panel-collapse collapse">
+                <div class="panel-body">
+                    第四部分内容
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="btn2" class="btn btn-primary" data-target="#content1">Bootstrap</button>
+    <div class="collapse" id="content1">
+        <div class="well">
+            Bootstrap是Twitter推出的一个用于前端开发的开源工具包。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。目前，Bootstrap最新版本为3.0 。Bootstrap中文网致力于为广大国内开发者提供详尽的中文文档、代码实例等，助力开发者掌握并使用这一框架。
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $("#btn").on("click",function(){
+            var btn = $(this);
+            $(this).button('loading');
+            setTimeout(function(){
+                btn.button('reset');
+            },1000)
+        })
+
+        $("btn1").on("click",function(){
+            $(this).button('toggle');
+        })
+
+        $("#collapseOne1,#collapsetwo1,#collapsethree1,#collapsefour1").collapse({
+            parent:"#accordion1",
+            toggle:false
+        })
+
+        $("#btn2").on("click",function(){
+            $("#content1").collapse("toggle");
+        })
+    </script>
+</body>
+</html>
