@@ -86,7 +86,7 @@ body {
 
 .jumbotron{
     background-image:url(../img/bg.jpg);
-    margin-top:50px;
+    margin:50px 0 0 0;
     color:#ccc;
 }
 
@@ -148,6 +148,27 @@ body {
     color:#333;
     font-size:16px;
     padding-top:2px;
+}
+
+#case{
+    padding:40px 0;
+    background-color:#eee;
+    text-align:center;
+    color:#666;
+}
+
+#about{
+    padding:40px 0;
+    background-color:#eee;
+}
+
+#about a{
+    color:#0059b2;
+}
+
+.about{
+    background-color:#fff;
+    box-shadow:2px 2px 3px #ccc;
 }
 
 #footer{
