@@ -27,6 +27,27 @@
 -->
 <script type="text/javascript">
 
+  function foo(a,...value){
+      console.log(arguments);
+      //arguments.callee();
+      console.log(value);
+      /*arguments.forEach(function(item,index){
+          console.log(item,index);
+      })*/
+
+      value.forEach(function(item,index){
+          console.log(item,index);
+      })
+  }
+  foo(2,65,33,44);
+
+  let arr = [1,6];
+  let arr1 = [2,3,4,5];
+  arr = [1,...arr1,6];
+  console.log(arr);
+  console.log(...arr);
+  arr.push(...arr1);
+  console.log(arr);
 
 </script>
 

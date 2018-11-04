@@ -29,6 +29,51 @@
 -->
 <script type="text/javascript">
 
+    let fun = function(){
+
+    }
+
+    let fun1 = () => console.log('我是箭头函数');
+    fun1();
+
+    let fun2 = a => console.log(a);
+    fun2('aaa');
+
+    let fun3 = (x,y) => console.log(x,y);
+    fun3(25,36);
+
+    let fun4 = (x,y) => {return x + y;}
+    console.log(fun4(24,36));
+
+    let fun5 = (x,y) => x + y;
+    console.log(fun5(24,36));
+
+    let fun6 = (x,y) => {
+        console.log(x,y);
+        return x + y;
+    }
+    console.log(fun6(35,49));
+
+    let btn1 = document.getElementById('btn1');
+    let btn2 = document.getElementById('btn2');
+
+    btn1.onclick = function () {
+        console.log(this);
+    }
+
+
+
+    let obj = {
+        name : '箭头函数',
+        getName : () => {
+            btn2.onclick =  () => {
+                console.log(this);
+            }
+        }
+    }
+
+    obj.getName();
+
 </script>
 
 </body>
