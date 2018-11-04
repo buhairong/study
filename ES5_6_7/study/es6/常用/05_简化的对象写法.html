@@ -19,7 +19,17 @@
   };
 -->
 <script type="text/javascript">
-
+  let username = 'kobe';
+  let age = 39;
+  let obj = {
+      username,
+      age,
+      getName() {
+          return this.username;
+      }
+  }
+  console.log(obj);
+  console.log(obj.getName());
 </script>
 </body>
 </html>
