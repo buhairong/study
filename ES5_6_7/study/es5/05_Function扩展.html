@@ -15,7 +15,19 @@
 -->
 <script type="text/javascript">
 
+  var obj = {username : 'kobe'};
+  function foo(data){
+      console.log(this,data);
+  }
 
+  foo.call(obj,33);
+  foo.apply(obj,[33]);
+
+  var bar = foo.bind(obj,33);
+  bar();
+  setTimeout(function(){
+      console.log(this);
+  }.bind(obj),1000)
 </script>
 </body>
 </html>
