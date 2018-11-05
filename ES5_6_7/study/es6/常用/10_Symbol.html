@@ -32,7 +32,29 @@
 
 
 <script type="text/javascript">
-    
+    let symbol = Symbol();
+    console.log(symbol);
+    let obj = {
+        username:'kobe',
+        age:39
+    };
+    obj.sex = '男';
+    obj[symbol] = 'hello';
+    console.log(obj);
+
+    for(let i in obj){
+        console.log(i);
+    }
+
+    let symbol2 = Symbol('one');
+    let symbol3 = Symbol('two');
+    console.log(symbol2 == symbol3);
+    console.log(symbol2,symbol3);
+
+    const Person_key = Symbol('person_key');
+    console.log(Person_key);
+
+
 
 </script>
 
