@@ -44,6 +44,50 @@
 
 <script type="text/javascript">
 
+    function getNews(url) {
+        let promise = new Promise((resolve,reject) => {
+            let xmlHttp = new XMLHttpRequest();
+            xmlHttp.onreadystatechange = function () {
+                if(xmlHttp.readyState === 4){
+                    if(xmlHttp.status === 200){
+                        resolve(xmlHttp.responseText);
+                    }else{
+                        reject('暂时没有新闻内容');
+                    }
+                }
+            }
+
+            xmlHttp.open('GET',url);
+            xmlHttp.send();
+
+        })
+
+        return promise;
+    }
+
+
+
+    getNews('http://365linju.com/index.html')
+        .then(
+            (data) => {
+                console.log(data);
+                let url = 'http://365linju.com/index.html';
+                return getNews(url);
+            },
+            (error) => {
+                console.log(error);
+            }
+        )
+        .then(
+            (data) => {
+                console.log(data);
+            },
+            (error) => {
+                console.log(error);
+            }
+        )
+
+
 
 </script>
 
