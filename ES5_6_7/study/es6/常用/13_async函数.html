@@ -25,7 +25,66 @@
 <script type="text/javascript" src="./js/jquery-1.10.1.min.js"></script>
 <script type="text/javascript">
 
-    
+    async function foo(){
+        return new Promise(resolve => {
+
+            /*setTimeout(function(){
+                resolve();
+            },2000);*/
+
+            setTimeout(resolve,2000);
+        })
+    }
+
+    async function test() {
+        console.log('开始执行',new Date().toTimeString());
+        await foo();
+        console.log('执行完毕',new Date().toTimeString());
+    }
+
+    test();
+
+    function test2() {
+        return 'xxx';
+    }
+
+    async function asyncPrint() {
+        //let result = await test2();
+        let result = await Promise.resolve('成功了');
+        console.log(result);
+
+        result = await Promise.reject('失败了');
+        console.log(result);
+    }
+
+    asyncPrint();
+
+    async function getNews(url) {
+        return new Promise((resolve,reject) => {
+            $.ajax({
+                method:'GET',
+                url,
+                success:function(data){
+                    resolve(data);
+                },
+                error:function(error){
+                    resolve(false);
+                }
+            })
+        })
+    }
+
+    async function sendXml(){
+        let result = await getNews('http://365linju.com');
+        result = await getNews('http://3645linju.com');
+        if(!result){
+            alert('暂时没有评论！');
+            return;
+        }
+        console.log(result);
+    }
+
+    sendXml();
 
 </script>
 
