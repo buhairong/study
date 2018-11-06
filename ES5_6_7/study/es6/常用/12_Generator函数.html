@@ -29,9 +29,34 @@
 <script type="text/javascript" src="./js/jquery-1.10.1.min.js"></script>
 <script type="text/javascript">
 
-    
-    // 对象的symbol.iterator属性  指向遍历器对象
+    function* myGenerator() {
+        console.log('开始执行');
+        let result = yield 'hello';
+        console.log(result);
+        console.log('暂停后，再次执行');
+        yield 'generator';
+        console.log('遍历完毕');
+        return '返回的结果';
+    }
 
+    let MG = myGenerator();
+    console.log(MG);
+    console.log(MG.next());
+    console.log(MG.next('aaa'));
+    console.log(MG.next());
+
+    // 对象的symbol.iterator属性  指向遍历器对象
+    let obj = {username:'kobe',age:39};
+
+    obj[Symbol.iterator] = function* myTest() {
+        yield 1;
+        yield 2;
+        yield 3;
+    }
+
+    for(let i of obj){
+        console.log(i);
+    }
   
     // 案例练习
     /*
@@ -42,7 +67,21 @@
     * 
     * */ 
 
+    function getNews(url) {
+        $.get(url,function(data){
+            console.log(data);
+            let url = 'http://365linju.com';
+            SX.next(url);
+        })
+    }
 
+    function* sendXml() {
+        let url = yield getNews('http://365linju.com');
+        yield getNews(url);
+    }
+
+    let SX = sendXml();
+    SX.next();
 
 
 

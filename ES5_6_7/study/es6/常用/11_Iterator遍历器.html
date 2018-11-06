@@ -29,6 +29,56 @@
 
   <script type="text/javascript">
 
+    function myIterator (arr) {
+        let nextIndex = 0;
+        return {
+            next :function () {
+                return nextIndex < arr.length ? {value:arr[nextIndex++],done:false} : {value:undefined,done:true};
+            }
+        }
+    }
+
+    let arr = [1,4,65,'abc'];
+    let iteratorObj = myIterator(arr);
+    console.log(iteratorObj.next());
+    console.log(iteratorObj.next());
+    console.log(iteratorObj.next());
+    console.log(iteratorObj.next());
+    console.log(iteratorObj.next());
+    console.log(iteratorObj.next());
+
+    for(let i of arr){
+        console.log(i);
+    }
+
+    let str = 'abcdefg';
+    for(let i of str){
+        console.log(i);
+    }
+
+    function fun(){
+        for(let i of arguments){
+            console.log(i);
+        }
+    }
+
+    fun(1,4,5,'abc');
+
+    let obj = {username:'kobe',age:39};
+    /*for(let i of obj){
+        console.log(i);
+    }*/
+
+    let targetData = {
+        [Symbol.iterator]:function(){
+            let nextIndex = 0;
+            return {
+                next :function () {
+                    return nextIndex < this.length ? {value:this[nextIndex++],done:false} : {value:undefined,done:true};
+                }
+            }
+        }
+    }
   </script>
 </body>
 </html>
