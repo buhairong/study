@@ -26,12 +26,56 @@
          let obj1 = obj; // obj1 复制了obj在栈内存的引用
       2、常用的拷贝技术
         1). arr.concat(): 数组浅拷贝
-        2). arr.slice(): 数组浅拷贝
+        2). arr.slice(): 数组浅拷贝 Object.assign() 数组浅拷贝
         3). JSON.parse(JSON.stringify(arr/obj)): 数组或对象深拷贝, 但不能处理函数数据
         4). 浅拷贝包含函数数据的对象/数组
         5). 深拷贝包含函数数据的对象/数组
 -->
 <script type="text/javascript">
+
+    let str = 'abcd';
+    let str2 = str;
+    console.log(str2);
+    str2 = '';
+    console.log(str);
+
+    let bool1 = true;
+    let bool2 = bool1;
+    bool2 = false;
+    console.log(bool1);
+
+    let obj = {username:'kobe',age:39};
+    let obj1 = obj;
+    console.log(obj1);
+    obj1.username = 'wade';
+    console.log(obj);
+
+    let arr = [1,4,{username:'kobe',age:39}];
+    let arr2 = arr;
+    arr2[0] = 'abcd';
+    console.log(arr,arr2);
+
+    let o = {username:'kobe'};
+    let o2 = Object.assign(o);
+    console.log(o2);
+    o2.username = 'wade';
+    console.log(o);
+
+    let arr3 = [1,3,{username:'kobe'},function fun(){}];
+
+    let arr4 = arr3.concat();
+    console.log(arr4);
+    arr4[1] = 'a';
+    arr4[2].username = 'wade';
+    console.log(arr3[2].username);
+    let arr5 = arr3.slice();
+    arr5[2].username = 'anverson';
+    console.log(arr3[2].username);
+
+    let arr6 = JSON.parse(JSON.stringify(arr3));
+    console.log(arr6);
+    arr6[2].username = 'ducan';
+    console.log(arr6,arr3);
 
 </script> 
 </body>
