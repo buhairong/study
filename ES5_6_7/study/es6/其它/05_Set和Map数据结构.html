@@ -27,6 +27,21 @@
 
 <script type="text/javascript">
 
+    let set = new Set([1,2,4,5,2,3,6]);
+    console.log(set);
+    set.add(7);
+    console.log(set.size,set);
+    console.log(set.has(7));
+    console.log(set.has(8));
+    set.clear();
+    console.log(set);
+
+    let map = new Map([['username','aaa'],['age',36]]);
+    console.log(map);
+    map.set(78,'haha');
+    console.log(map);
+    map.delete('age');
+    console.log(map);
 
 </script>
 </body>
