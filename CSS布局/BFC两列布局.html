@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            min-width:600px;
+        }
+        #left,#right{
+            height:200px;
+        }
+        #left{
+            width:200px;
+            background:pink;
+            float:left;
+        }
+        #right{
+            background-color: deeppink;
+            overflow:hidden;
+        }
+
+        #wrap{
+            width:300px;
+            border:1px solid;
+            margin:0 auto;
+        }
+        #left1{
+            float:left;
+            width:80px;
+            height:80px;
+            background: url(xfz.png) no-repeat;
+        }
+        #right1{
+            overflow: hidden;
+            padding-left:10px;
+            white-space:nowrap;
+            -ms-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div id="left">left</div>
+    <div id="right">right</div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="wrap">
+        <div id="left1"></div>
+        <div id="right1">此产品贱卖  买一送三 此产品贱卖  买一送三<br />
+            此产品贱卖  买一送三 此产品贱卖  买一送三<br />
+            此产品贱卖  买一送三 此产品贱卖  买一送三<br />
+            此产品贱卖  买一送三 此产品贱卖  买一送三<br />
+            此产品贱卖  买一送三 此产品贱卖  买一送三<br />
+            此产品贱卖  买一送三 此产品贱卖  买一送三<br />
+            此产品贱卖  买一送三 此产品贱卖  买一送三<br />
+            此产品贱卖  买一送三 此产品贱卖  买一送三<br /></div>
+    </div>
+</body>
+</html>
