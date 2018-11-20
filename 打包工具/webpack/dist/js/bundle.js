@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "js/";
+/******/ 	__webpack_require__.p = "dist/js/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 0);
@@ -164,7 +164,7 @@ exports = module.exports = __webpack_require__(6)(false);
 
 
 // module
-exports.push([module.i, "body{\r\n    background:red;\r\n}\r\n#box1{\r\n    width: 300px;\r\n    height: 300px;\r\n    background-image: url(" + escape(__webpack_require__(7)) + ");\r\n}\r\n#box2{\r\n    width: 300px;\r\n    height: 300px;\r\n    background-image: url(" + escape(__webpack_require__(8)) + ");\r\n}", ""]);
+exports.push([module.i, "body{\r\n    background:red;\r\n}\r\n#box1{\r\n    width: 300px;\r\n    height: 300px;\r\n    background-image: url(" + escape(__webpack_require__(7)) + ");\r\n}\r\n#box2{\r\n    width: 600px;\r\n    height: 300px;\r\n    background-image: url(" + escape(__webpack_require__(8)) + ");\r\n}", ""]);
 
 // exports
 

@@ -1,3 +1,5 @@
+https://doc.webpack-china.org/
+
 ## webpack快速入门教程
 ###1、了解Webpack相关
 	* 什么是webpack
@@ -20,8 +22,8 @@
 	
 ###2、学习文档 : 
   * webpack官网: http://webpack.github.io/
-  * webpack2文档(英文): https://webpack.js.org/
-  * webpack2文档(中文): https://doc.webpack-china.org/
+  * webpack3文档(英文): https://webpack.js.org/
+  * webpack3文档(中文): https://doc.webpack-china.org/
 ###3、开启项目
   * 初始化项目：
 	  * 生成package.json文件
