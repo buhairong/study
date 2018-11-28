@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+<div id="news" style="background-color: pink;height: 90px;overflow:hidden;line-height: 45px;">
+    <ul style="margin-top:0!important">
+        <li>
+            <div>1首页</div>
+            <div>12首页</div>
+        </li>
+        <li>
+            <div>2产品</div>
+            <div>21产品</div>
+        </li>
+        <li>
+            <div>3联系我们</div>
+            <div>31联系我们</div>
+        </li>
+        <li>
+            <div>4支付方式</div>
+            <div>41支付方式</div>
+        </li>
+        <li>
+            <div>5销售QQ</div>
+            <div>51销售QQ</div>
+        </li>
+        <li>
+            <div>6售后服务</div>
+            <div>61售后服务</div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    function autoScroll(obj){
+        $(obj).find('ul').animate({
+            marginTop: '-90px'
+        },1000,function(){
+            $(this).css({marginTop : "0px"});
+            var li  =$("ul").children().first().clone();
+            $("ul li:last").after(li );
+            $("ul li:first").remove();
+
+        })
+    }
+
+
+    $(function(){
+
+        setInterval('autoScroll("#news")',2000);
+        console.log(666);
+
+
+    })
+</script>
