@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li.selected {
+            color: blue;
+        }
+        li {
+            color:black;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<ul>
+    <li class="selected">foo1</li>
+    <li>foo2</li>
+    <li>foo3</li>
+    <li>foo4</li>
+    <li>foo5</li>
+</ul>
+
+</body>
+</html>
+<script>
+
+    class Foo {
+
+        constructor() {
+            this.name = "Siri"
+            this.hello = this.hello.bind(this)
+            setTimeout(this.hello, 1000)
+        }
+
+        hello() {
+            console.log("hello " + this.name)
+        }
+    }
+    var foo = new Foo()
+
+</script>
