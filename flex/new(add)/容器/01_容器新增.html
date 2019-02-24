@@ -10,7 +10,7 @@
         }
         #wrap{
             width:100px;
-            height:300px;
+           /* height:300px;*/
             border:1px solid;
             margin:100px auto;
             display:flex;
@@ -23,7 +23,7 @@
                 space-between                  富裕空间在项目之间
                 space-around(box没有的)        富裕空间在项目两边
             */
-            justify-content: flex-start;
+            justify-content: space-between;
 
             /*
                 flex-start                     富裕空间在侧轴的正方向
@@ -32,13 +32,13 @@
                 baseline(box没有的)            按基线对齐
                 stretch(box没有的)             等高布局
             */
-            align-items:flex-start;
-            /*flex-wrap:wrap;*/
-            flex-flow:row wrap;
-            align-content:flex-start;
+            /*align-items:flex-start;*/
+            flex-wrap:wrap;
+            /*flex-flow:row wrap;*/
+            /*align-content:flex-start;*/
         }
         #wrap .item{
-            width:50px;
+            width:30px;
             height:50px;
             background: pink;
             text-align: center;
