@@ -13,7 +13,45 @@
   <script type="text/javascript" src="../js/prop-types.js"></script>
   <script type="text/javascript" src="../js/babel.min.js"></script>
   <script type="text/babel">
+    /*
+    * 问题： 数据保存在哪个组件内
+    * */
+    class App extends React.Component {
+        render () {
+            return (
+                <div>
+                  <h1>Simple TODO List</h1>
+                  <Add />
+                  <List />
+                </div>
+            )
+        }
+    }
 
+    class Add extends React.Component {
+        render () {
+            return (
+                <div>
+                  <input type="text"/>
+                  <button>add #4</button>
+                </div>
+            )
+        }
+    }
+
+    class List extends React.Component {
+        render () {
+            return (
+                <ul>
+                  <li>AAA</li>
+                  <li>BBB</li>
+                  <li>CCC</li>
+                </ul>
+            )
+        }
+    }
+
+    ReactDOM.render(<App />, document.getElementById('example'))
   </script>
 </body>
 </html>
