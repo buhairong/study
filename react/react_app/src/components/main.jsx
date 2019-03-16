@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
+import axios from 'axios'
 
 export default class Main extends Component {
 
@@ -12,6 +13,41 @@ export default class Main extends Component {
         loading: false,
         users: null,
         errorMsg: null
+    }
+
+    // 当组件接收到新的属性时回调
+    componentWillReceiveProps (newProps) { // 指定了新的searchName,需要请求
+        const {searchName} = newProps
+        // 更新状态（请求中）
+        this.setState({
+            initView: false,
+            loading: true
+        })
+
+        // 发ajax请求
+        const url = `https://api.github.com/search/users?q=${searchName}`
+        axios.get(url)
+            .then(response => {
+                // 得到响应数据
+                const result = response.data
+                const users = result.items.map(item => ({
+                    name: item.login,
+                    url: item.html_url,
+                    avatarUrl: item.avatar_url
+                }))
+                // 更新状态（成功）
+                this.setState({
+                    loading: false,
+                    users
+                })
+            })
+            .catch(error => {
+                // 更新状态（失败）
+                this.setState({
+                    loading: false,
+                    errorMsg: error.message
+                })
+            })
     }
 
     render () {
@@ -28,7 +64,7 @@ export default class Main extends Component {
                 <div className="row">
                     {
                         users.map((user, index) => (
-                            <div className="card">
+                            <div className="card" key={index}>
                                 <a href={user.url} target="_blank">
                                     <img src={user.avatarUrl} style={{width: '100px'}}/>
                                 </a>
