@@ -1,9 +1,14 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types'
 
 export default class Main extends Component {
 
+    static propTypes = {
+        searchName: PropTypes.string.isRequired
+    }
+
     state = {
-        initView: true
+        initView: true,
         loading: false,
         users: null,
         errorMsg: null
