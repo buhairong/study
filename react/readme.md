@@ -9,3 +9,5 @@ npm start
 
 npm install --save prop-types
 npm install --save axios
+npm install --save pubsub-js
+npm install --save react-router-dom

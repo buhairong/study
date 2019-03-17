@@ -2,11 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c29ee82d-3de7-4af5-8dda-38c3da4fdbbe" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_app/src-users2/components/app.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_app/src-users2/components/main.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_app/src-users2/components/search.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_app/src-users2/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_app/src/components/app/app.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_app/src/components/comment-add/comment-add.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_app/src/components/comment-item/comment-item.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_app/src/components/comment-item/commentItem.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_app/src/components/comment-list/comment-list.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_app/src/components/comment-list/commentList.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_app/src_users/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_app/src_users/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_router/public/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_router/src/components/MyNavLink.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_router/src/components/app.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_router/src/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_router/src/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_router/src/views/News.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_router/src/views/about.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_router/src/views/home.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_router/src/views/message-detail.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react/react_router/src/views/message.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/react_app/package-lock.json" afterPath="$PROJECT_DIR$/react/react_app/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/react_app/package.json" afterPath="$PROJECT_DIR$/react/react_app/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/react_app/src/components/main.jsx" afterPath="$PROJECT_DIR$/react/react_app/src/components/main.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/react_app/src/index.js" afterPath="$PROJECT_DIR$/react/react_app/src/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react/readme.md" afterPath="$PROJECT_DIR$/react/readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/react/react_app/src/components/app.jsx" afterPath="$PROJECT_DIR$/react/react_app/src_users/components/app.jsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/react/react_app/src/components/main.jsx" afterPath="$PROJECT_DIR$/react/react_app/src_users/components/main.jsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/react/react_app/src/components/search.jsx" afterPath="$PROJECT_DIR$/react/react_app/src_users/components/search.jsx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/react/react_app/src/index.css" afterPath="$PROJECT_DIR$/react/react_app/src-users2/index.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,38 +49,96 @@
       <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="0">
+              <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react/react_router/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="app.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/react/react_app/src/components/app.jsx">
+        <entry file="file://$PROJECT_DIR$/react/react_router/src/components/app.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            <state relative-caret-position="608">
+              <caret line="32" column="60" lean-forward="false" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="News.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react/react_router/src/views/News.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/react/react_app/src/components/search.jsx">
+      <file leaf-file-name="message.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/react/react_router/src/views/message.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="386">
+              <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyNavLink.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react/react_router/src/components/MyNavLink.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react/react_router/src/views/about.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/react/react_app/src/components/main.jsx">
+      <file leaf-file-name="message-detail.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react/react_router/src/views/message-detail.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-182">
-              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/react/react_router/src/views/home.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="40" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -67,8 +151,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -94,17 +178,29 @@
         <option value="$PROJECT_DIR$/react/react_app/src/components/comment-list/commentList.css" />
         <option value="$PROJECT_DIR$/react/react_app/src/components/comment-item/commentItem.css" />
         <option value="$PROJECT_DIR$/react/react_app/src/components/comment-add/comment-add.jsx" />
-        <option value="$PROJECT_DIR$/react/react_app/src/components/comment-item/comment-item.jsx" />
-        <option value="$PROJECT_DIR$/react/react_app/src/components/app/app.jsx" />
-        <option value="$PROJECT_DIR$/react/react_app/src/components/comment-list/comment-list.jsx" />
         <option value="$PROJECT_DIR$/react/test/work/11_ajax/test.html" />
         <option value="$PROJECT_DIR$/react/react_app/src/components/main.jsx.js" />
         <option value="$PROJECT_DIR$/react/react_app/src/index.js" />
-        <option value="$PROJECT_DIR$/react/react_app/src/components/search.jsx" />
-        <option value="$PROJECT_DIR$/react/react_app/src/components/app.jsx" />
-        <option value="$PROJECT_DIR$/react/readme.md" />
         <option value="$PROJECT_DIR$/react/react_app/package.json" />
+        <option value="$PROJECT_DIR$/react/react_app/src/components/app.jsx" />
+        <option value="$PROJECT_DIR$/react/react_app/src/components/search.jsx" />
         <option value="$PROJECT_DIR$/react/react_app/src/components/main.jsx" />
+        <option value="$PROJECT_DIR$/react/react_app/src/components/comment-list/comment-list.jsx" />
+        <option value="$PROJECT_DIR$/react/react_app/src/components/comment-item/comment-item.jsx" />
+        <option value="$PROJECT_DIR$/react/react_app/src/components/app/app.jsx" />
+        <option value="$PROJECT_DIR$/react/readme.md" />
+        <option value="$PROJECT_DIR$/react/react_router/public/index.html" />
+        <option value="$PROJECT_DIR$/react/react_router/package.json" />
+        <option value="$PROJECT_DIR$/react/react_router/src/index.js" />
+        <option value="$PROJECT_DIR$/react/react_router/src/index.css" />
+        <option value="$PROJECT_DIR$/react/react_router/src/components/app.jsx" />
+        <option value="$PROJECT_DIR$/react/react_router/src/components/MyNavLink.jsx" />
+        <option value="$PROJECT_DIR$/react/react_router/src/views/news.jsx" />
+        <option value="$PROJECT_DIR$/react/react_router/src/views/News.jsx" />
+        <option value="$PROJECT_DIR$/react/react_router/src/views/home.jsx" />
+        <option value="$PROJECT_DIR$/react/react_router/src/views/about.jsx" />
+        <option value="$PROJECT_DIR$/react/react_router/src/views/message-detail.jsx" />
+        <option value="$PROJECT_DIR$/react/react_router/src/views/message.jsx" />
       </list>
     </option>
   </component>
@@ -126,12 +222,14 @@
     <handled-path value="$PROJECT_DIR$/JSMOUDLE/03_CommonJS-Browserify/node_modules" />
     <handled-path value="$PROJECT_DIR$/JSMOUDLE/06_ES6_Babel_Browserify/node_modules" />
     <handled-path value="$PROJECT_DIR$/react/react_app/node_modules" />
+    <handled-path value="$PROJECT_DIR$/react/react_router/node_modules" />
     <handled-path value="$PROJECT_DIR$/vue/code/VuexTest/node_modules" />
+    <handled-path value="$PROJECT_DIR$/打包工具/webpack4_test/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="-2" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -150,7 +248,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,35 +265,36 @@
               <item name="study" type="b2602c69:ProjectViewProjectNode" />
               <item name="study" type="462c0819:PsiDirectoryNode" />
               <item name="react" type="462c0819:PsiDirectoryNode" />
-              <item name="react_app" type="462c0819:PsiDirectoryNode" />
+              <item name="react_router" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="study" type="b2602c69:ProjectViewProjectNode" />
               <item name="study" type="462c0819:PsiDirectoryNode" />
               <item name="react" type="462c0819:PsiDirectoryNode" />
-              <item name="react_app" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study" type="462c0819:PsiDirectoryNode" />
-              <item name="react" type="462c0819:PsiDirectoryNode" />
-              <item name="react_app" type="462c0819:PsiDirectoryNode" />
+              <item name="react_router" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="study" type="b2602c69:ProjectViewProjectNode" />
               <item name="study" type="462c0819:PsiDirectoryNode" />
               <item name="react" type="462c0819:PsiDirectoryNode" />
-              <item name="react_app" type="462c0819:PsiDirectoryNode" />
+              <item name="react_router" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="study" type="462c0819:PsiDirectoryNode" />
+              <item name="react" type="462c0819:PsiDirectoryNode" />
+              <item name="react_router" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -216,16 +315,18 @@
     <property name="node.js.path.for.package.jscs" value="project" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.selected.package.jscs" value="" />
+    <property name="last_opened_file_path" value="D:/class1/react/12.尚硅谷-React/源代码/code/react_router" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\workspace\study\react\react_app\src\components\app" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\js\study\react\react_router\public" />
+      <recent name="D:\js\study\react\react_app\src" />
+      <recent name="D:\js\study\react\react_app" />
       <recent name="D:\workspace\study\react\react_app\src" />
       <recent name="D:\workspace\study\react" />
-      <recent name="D:\workspace\study\react\react_app\public\css" />
-      <recent name="D:\workspace\study\react\react_app\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\study\react\react_app\src\components\app" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -258,22 +359,26 @@
       <workItem from="1552627872635" duration="2162000" />
       <workItem from="1552699786275" duration="6187000" />
       <workItem from="1552744677154" duration="1454000" />
+      <workItem from="1552785578593" duration="1235000" />
+      <workItem from="1552787083950" duration="2692000" />
+      <workItem from="1552793592382" duration="3747000" />
+      <workItem from="1552804068103" duration="7031000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42876000" />
+    <option name="totallyTimeSpent" value="57581000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17633928" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17597471" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29605263" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2383025" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -301,107 +406,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/react/react_app/src/components/app.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/react_app/src/components/search.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/react_app/src/components/main.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/users_page/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="50" column="8" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="50" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/react_app/src/components/app.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/react_app/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="true" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/react_app/src/components/search.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/react_app/src/components/main.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="73" lean-forward="false" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/test/work/11_ajax/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/test/work/11_ajax/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/react_app/src-comment/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/react_app/src-comment/components/app/app.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/test/work/10_vDOM-DOM Diff/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/react/test/work/06_component_refs_event/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
@@ -552,13 +556,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react/react_app/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/react/react_app/src/index.css" />
     <entry file="file://$PROJECT_DIR$/react/users_page/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -580,23 +578,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react/react_app/src/components/app.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react/react_app/src/components/search.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/react/react_app/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/react_app/src_users/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/react_app/src/components/app.jsx" />
+    <entry file="file://$PROJECT_DIR$/react/react_app/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/react_app/src/components/search.jsx" />
+    <entry file="file://$PROJECT_DIR$/react/react_app/src/components/main.jsx" />
+    <entry file="file://$PROJECT_DIR$/react/react_app/src-users2/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/react_app/src/components/comment-list/comment-list.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="22" column="63" lean-forward="false" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/react_app/src/components/comment-item/comment-item.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/react_app/src/components/app/app.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/react_router/public/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -606,24 +646,104 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/react/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react/react_app/package.json">
+    <entry file="file://$PROJECT_DIR$/react/react_router/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        <state relative-caret-position="456">
+          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react/react_app/src/components/main.jsx">
+    <entry file="file://$PROJECT_DIR$/react/react_router/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-182">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/react_router/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/react_router/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/react_router/src/components/MyNavLink.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/react_router/src/views/News.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/react_router/src/views/home.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/react_router/src/views/about.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/react_router/src/views/message-detail.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/react_router/src/components/app.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="60" lean-forward="false" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react/react_router/src/views/message.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
