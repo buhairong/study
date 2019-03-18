@@ -19,3 +19,6 @@ npm install less less-loader customize-cra --save-dev
 
 npm install --save redux
 npm install --save react-redux
+npm install --save redux-thunk
+
+npm install --save-dev redux-devtools-extension
