@@ -4,18 +4,20 @@ import {connect} from 'react-redux'
 
 import CommentAdd from '../../components/comment-add/comment-add'
 import CommentList from '../../components/comment-list/comment-list'
-import {addComment, deleteComment} from '../../redux/actions'
+import {addComment, deleteComment, getComments} from '../../redux/actions'
 
 class App extends Component {
 
     static propTypes = {
         comments: PropTypes.array.isRequired,
         addComment: PropTypes.func.isRequired,
-        deleteComment: PropTypes.func.isRequired
+        deleteComment: PropTypes.func.isRequired,
+        getComments: PropTypes.func.isRequired
     }
 
     componentDidMount () {
-
+        // 异步获取所有评论数组
+        this.props.getComments()
     }
 
     render () {
@@ -41,6 +43,6 @@ class App extends Component {
 }
 
 export default connect (
-    state => ({comments: state}), // state就是一个comments数组
-    {addComment, deleteComment}
+    state => ({comments: state.comments}), // state就是一个comments数组
+    {addComment, deleteComment, getComments}
 )(App)
