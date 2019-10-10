@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <audio id="music" src="sftmrhlmj.m4a" controls="controls" preload="auto">
+        Your browser does not support the audio element.
+    </audio>
+    <canvas id="canvas"></canvas>
+</div>
+
+</body>
+<script>
+    var music = document.getElementById('music');
+    //绑定timeupdate事件
+    music.addEventListener('timeupdate',function(){
+        if (!isNaN(music.duration)) {
+            var progressValue = music.currentTime/music.duration; //用时间比来获取进度条的值
+            if(progressValue == 1){
+                progressValue=0;//当播放完成，进度条跳到开始
+            }
+            drawCircle(document.getElementById('canvas'),progressValue);
+
+        };
+    },false);
+
+    drawCircle = function (canvas, percentage) {
+        var clientWidth = document.documentElement.clientWidth;
+        var canvasWidth = 36+10;
+        var innerR = 36 * 0.5;//半径
+        var ctx;
+        canvas.setAttribute('width', canvasWidth + 'px');
+        canvas.setAttribute('height', canvasWidth + 'px');
+        if (canvas.getContext) {
+            ctx = canvas.getContext('2d');
+        }
+        ctx.translate(canvasWidth / 2, canvasWidth / 2);
+        ctx.beginPath();
+        ctx.arc(0, 0, innerR, 0, Math.PI * 2, false);
+        ctx.lineWidth = 10;
+        ctx.strokeStyle = "#F0F0F0";
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(0, 0, innerR, Math.PI * 3 / 2, (Math.PI * 3 / 2 + Math.PI * 2 / 180 + percentage * Math.PI * 2), false);
+        ctx.lineWidth = 10;
+        ctx.strokeStyle = "#EEBD44";
+        ctx.stroke();
+    };
+
+    //drawCircle(document.getElementById('canvas'),0);
+</script>
+</html>

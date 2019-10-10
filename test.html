@@ -2,106 +2,425 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
     <title>Title</title>
+    <script src="jquery-3.1.0.js"></script>
+    <script src="iscroll.js"></script>
     <style>
-        li.selected {
-            color: blue;
+        *{
+            margin:0;
+            padding:0;
         }
-        li {
-            color:black;
+        ul{
+            list-style:none;
         }
-
-
-
+        .mengban{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            overflow: hidden;
+            background:#000;
+            opacity:0.2;
+        }
+        .dataWrap {
+            width: 100%;
+            height: 240px;
+            background: #fff;
+            position: absolute;
+            bottom:0;
+            left:0;
+            border-radius:10px;
+        }
+        .dataHeader{
+            position:relative;
+            width:100%;
+            height:50px;
+            line-height:50px;
+            border-bottom:1px solid #f6f6f6;
+            font-size:14px;
+            color:#333;
+            padding:0 16px;
+            box-sizing:border-box;
+        }
+        .backBtn1{
+            float: left;
+            height: 100%;
+        }
+        .dataHeader p{
+            height:100%;
+            color:#FFCE3D;
+            font-size:16px;
+            position:absolute;
+            left:50%;
+            transform:translateX(-50%);
+        }
+        .toolsTxt1 {
+            display:block;
+            float:right;
+            height:100%;
+        }
+        .itemsWrap{
+            width:100%;
+            height:189px;
+            padding:18px 16px 19px;
+            box-sizing:border-box;
+            display:flex;
+            justify-content:space-between;
+            overflow:hidden;
+            position:relative;
+        }
+        .item{
+            width:33px;
+            height:165px;
+            overflow: hidden;
+        }
+        .item1{
+            width:51px;
+        }
+        .item ul li{
+            height:33px;
+            line-height:33px;
+            font-size:14px;
+            color:#333;
+        }
+        .item ul li.selected{
+            color:#FFCE3D;
+        }
+        .dataLine{
+            position: absolute;
+            left:0;
+            top:84px;
+            width:100%;
+            height:33px;
+            line-height:33px;
+            padding:0 16px;
+            box-sizing:border-box;
+            color:#FFCE3D;
+            font-size:14px;
+            display:flex;
+            justify-content:space-between;
+            overflow:hidden;
+        }
+        .dataLine .item{
+            text-align:right;
+        }
     </style>
 </head>
 <body>
-<ul>
-    <li class="selected">foo1</li>
-    <li>foo2</li>
-    <li>foo3</li>
-    <li>foo4</li>
-    <li>foo5</li>
-</ul>
-
+<div id="date"></div>
+<div class="mengban"></div>
+<div class="dataWrap">
+    <div class="dataHeader">
+        <a class="backBtn1">取消</a>
+        <p>活动时间</p>
+        <a class="toolsTxt1">确定</a>
+    </div>
+    <div class="itemsWrap">
+        <div class="dataLine">
+            <div class="item item1">年</div>
+            <div class="item">月</div>
+            <div class="item">日</div>
+            <div class="item">时</div>
+            <div class="item">分</div>
+        </div>
+        <div class="item item1" id="scroll-item1">
+            <ul class="year"></ul>
+        </div>
+        <div class="item" id="scroll-item2">
+            <ul class="month">
+                <li></li>
+                <li></li>
+                <li class="selected">01</li>
+                <li>02</li>
+                <li>03</li>
+                <li>04</li>
+                <li>05</li>
+                <li>06</li>
+                <li>07</li>
+                <li>08</li>
+                <li>09</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="item" id="scroll-item3">
+            <ul class="day">
+                <li></li>
+                <li></li>
+                <li class="selected">01</li>
+                <li>02</li>
+                <li>03</li>
+                <li>04</li>
+                <li>05</li>
+                <li>06</li>
+                <li>07</li>
+                <li>08</li>
+                <li>09</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li>31</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="item" id="scroll-item4">
+            <ul class="hour">
+                <li></li>
+                <li></li>
+                <li class="selected">00</li>
+                <li>01</li>
+                <li>02</li>
+                <li>03</li>
+                <li>04</li>
+                <li>05</li>
+                <li>06</li>
+                <li>07</li>
+                <li>08</li>
+                <li>09</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="item" id="scroll-item5">
+            <ul class="min">
+                <li></li>
+                <li></li>
+                <li class="selected">00</li>
+                <li>05</li>
+                <li>10</li>
+                <li>15</li>
+                <li>20</li>
+                <li>25</li>
+                <li>30</li>
+                <li>35</li>
+                <li>40</li>
+                <li>45</li>
+                <li>50</li>
+                <li>55</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</div>
 </body>
 </html>
 <script>
-/*
-*【主题1】现有库位表达式：x库.y区.n-m,n1,n2,n3
+    getFullDate($("#date"));
+    function getFullDate(obj){
+        var oDate = new Date();
+        var initYear = oDate.getFullYear()-2;
+        var html = "<li></li><li></li>";
+        for(var i=0; i<10; i++){
+            if(i==2){
+                html += "<li class='selected'>"+initYear+"</li>";
+            }else{
+                html += "<li>"+initYear+"</li>";
+            }
+            initYear++;
+        }
+        html += "<li></li><li></li>";
+        $(".year").html(html);
 
-（1）请编写一段代码来解读上述表达式，并在程序中完成后打印出此表达式所代表的详细库位信息
+        var scroll1 = new IScroll("#scroll-item1", {
+            bounceEasing: "ease",
+            bounceTime: 600,
+            startY:-66
+        });
 
-如：
+        var canScroll = false;
 
-例如：
+        scroll1.on("scrollStart", function () {
+            canScroll = true;
+        });
 
-上海一库.东区.13-15
+        scroll1.on("scrollEnd", function () {
+            var y = Math.abs(this.y);
+            var _index = Math.round(y / 33);
+            var _top = -1 * _index*33;
+            if(canScroll){
+                canScroll = false;
+                scroll1.scrollTo(0,_top,300);
+                $(".year").find("li").eq(_index+2).addClass("selected").siblings("li").removeClass("selected");
+                var year = $(".year .selected").eq(0).text();
+                var month = $(".month .selected").eq(0).text();
+                var html = "<li></li><li></li>";
+                var days = 28;
+                if(month == "02"){
+                    if(year%4==0){
+                        days=29;
+                    }else{
+                        days=28;
+                    }
+                    for(var i=1; i<=days; i++){
+                        var item = i<10 ? ("0"+i) : i;
+                        if(i==1){
+                            html += "<li class='selected'>"+item+"</li>";
+                        }else{
+                            html += "<li>"+item+"</li>";
+                        }
+                    }
+                    html += "<li></li><li></li>";
+                    $(".day").html(html);
+                    scroll3.refresh();
+                    scroll3.scrollTo(0,0,0);
+                }
+            }
+        });
 
-==============
+        var scroll2 = new IScroll("#scroll-item2", {
+            bounceEasing: "ease",
+            bounceTime: 600
+        });
 
-上海一库.东区.13
+        scroll2.on("scrollStart", function () {
+            canScroll = true;
+        });
 
-上海一库.东区.14
+        scroll2.on("scrollEnd", function () {
+            var y = Math.abs(this.y);
+            var _index = Math.round(y / 33);
+            var _top = -1 * _index*33;
+            if(canScroll){
+                canScroll = false;
+                scroll2.scrollTo(0,_top,300);
+                $(".month").find("li").eq(_index+2).addClass("selected").siblings("li").removeClass("selected");
+                var html = "<li></li><li></li>";
+                var days = 31;
+                switch(_index){
+                    case 0: days=31;break;
+                    case 1: var year = $(".year .selected").eq(0).text();
+                        if(year%4==0){
+                            days=29;
+                        }else{
+                            days=28;
+                        }
+                        break;
+                    case 2: days=31;break;
+                    case 3: days=30;break;
+                    case 4: days=31;break;
+                    case 5: days=30;break;
+                    case 6: days=31;break;
+                    case 7: days=31;break;
+                    case 8: days=30;break;
+                    case 9: days=31;break;
+                    case 10: days=30;break;
+                    case 11: days=31;break;
+                    default: days=31;
+                }
+                for(var i=1; i<=days; i++){
+                    var item = i<10 ? ("0"+i) : i;
+                    if(i==1){
+                        html += "<li class='selected'>"+item+"</li>";
+                    }else{
+                        html += "<li>"+item+"</li>";
+                    }
+                }
+                html += "<li></li><li></li>";
+                $(".day").html(html);
+                scroll3.refresh();
+                scroll3.scrollTo(0,0,0);
+            }
+        });
 
-上海一库.东区.15
+        var scroll3 = new IScroll("#scroll-item3", {
+            bounceEasing: "ease",
+            bounceTime: 600
+        });
+        scroll3.on("scrollStart", function () {
+            canScroll = true;
+        });
 
+        scroll3.on("scrollEnd", function () {
+            var y = Math.abs(this.y);
+            var _index = Math.round(y / 33);
+            var _top = -1 * _index*33;
+            if(canScroll){
+                canScroll = false;
+                scroll3.scrollTo(0,_top,300);
+                $(".day").find("li").eq(_index+2).addClass("selected").siblings("li").removeClass("selected");
+            }
+        });
 
+        var scroll4 = new IScroll("#scroll-item4", {
+            bounceEasing: "ease",
+            bounceTime: 600
+        });
+        scroll4.on("scrollStart", function () {
+            canScroll = true;
+        });
 
+        scroll4.on("scrollEnd", function () {
+            var y = Math.abs(this.y);
+            var _index = Math.round(y / 33);
+            var _top = -1 * _index*33;
+            if(canScroll){
+                canScroll = false;
+                scroll4.scrollTo(0,_top,300);
+                $(".hour").find("li").eq(_index+2).addClass("selected").siblings("li").removeClass("selected");
+            }
+        });
+        var scroll5 = new IScroll("#scroll-item5", {
+            bounceEasing: "ease",
+            bounceTime: 600
+        });
+        scroll5.on("scrollStart", function () {
+            canScroll = true;
+        });
 
+        scroll5.on("scrollEnd", function () {
+            var y = Math.abs(this.y);
+            var _index = Math.round(y / 33);
+            var _top = -1 * _index*33;
+            if(canScroll){
+                canScroll = false;
+                scroll5.scrollTo(0,_top,300);
+                $(".min").find("li").eq(_index+2).addClass("selected").siblings("li").removeClass("selected");
+            }
+        });
 
-上海一库.西区.1-3,5,7,9-11
+        $(document).on("click",".toolsTxt1",function(){
+            obj.html($(".year .selected").html()+$(".month .selected").html()+$(".day .selected").html()+$(".hour .selected").html()+$(".min .selected").html())
+        })
+    }
 
-=================
-
-上海一库.西区.1
-
-上海一库.西区.2
-
-上海一库.西区.3
-
-上海一库.西区.5
-
-上海一库.西区.7
-
-上海一库.西区.9
-
-上海一库.西区.10
-
-上海一库.西区.11
-
-
-
-（2）请思考后在上述表达示解释过程中加入校验逻辑，并在出错时给出精准提示
-**/
-
-
-/*
-*【主题2】编程题：请编写代码完成以下题目：
-
-(1)随机生成一堆数字作为源
-
-(2)随机生成一堆数字作为目标
-
-(3)设计一个算法计穷举哪些（目标中数字的和）与(源中数字和)一致
-
-(4)所设计的算法必须通过有效方法对产生的结果进行验证
-
-例子：
-
-源: 19,47,20,78,23
-
-目标: 13,6,14,23,33,31,10
-
-预期结果：
-
-源19 = 目标 13 + 6
-
-源47 = 目标 33 + 14
-
-源47 = 目标 14 + 23 + 10
-
-源19 + 47 = 目标 23 + 10 + 33
-**/
 
 </script>
