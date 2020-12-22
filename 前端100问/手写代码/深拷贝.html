@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const obj1 = {
+        age: 20,
+        name: 'xxx',
+        address: {
+            city: 'beijing'
+        },
+        arr: ['a', 'b', 'c'],
+        empty: null
+    }
+
+    // 1. 不考虑 函数
+    let obj2 = JSON.parse(JSON.stringify(obj1))
+
+    // 2
+    function deepClone(obj) {
+      if(typeof obj !== "object" || obj === null) {
+        return obj
+      }
+
+      let result
+      if(Array.isArray(obj)) {
+        result = []
+      }else {
+        result = {}
+      }
+
+      for(let key in obj) {
+        result[key] = deepClone(obj[key])
+      }
+
+      return result
+    }
+
+
+    obj2 = deepClone(obj1)
+    console.log(obj2);
+  </script>
+</body>
+</html>

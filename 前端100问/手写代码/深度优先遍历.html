@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="dom">
+    <div id="dom1">
+      <div id="dom1-1"></div>
+      <div id="dom1-2"></div>
+      <div id="dom1-3"></div>
+    </div>
+    <div id="dom2">
+      <div id="dom2-1"></div>
+      <div id="dom2-2"></div>
+      <div id="dom2-3"></div>
+    </div>
+    <div id="dom3">
+      <div id="dom3-1"></div>
+      <div id="dom3-2"></div>
+      <div id="dom3-3"></div>
+    </div>
+  </div>
+
+  <script>
+    let root = document.querySelector("#dom")
+
+    // 递归
+    function deep1(node, nodesList=[]) {
+      if(node !== null) {
+        nodesList.push(node)
+
+        let children = node.children
+
+        for (let i = 0; i < children.length; i++) {
+          deep1(children[i], nodesList)          
+        }
+      }
+
+      return nodesList
+    }
+
+    // 迭代
+    function deep2(node) {
+      const stack = []
+      const nodes = []
+
+      if(node) {
+        stack.push(node)
+        
+        while(stack.length) {
+          const item = stack.pop()
+          const children = item.children
+          nodes.push(item)
+
+          // node = [] stack = [parent]
+          // node = [parent] stack = [child3,child2,child1]
+          // node = [parent, child1] stack = [child3,child2,child1-2,child1-1]
+          // node = [parent, child1-1] stack = [child3,child2,child1-2]
+          for(let i=children.length-1; i>=0; i--) {
+            stack.push(children[i])
+          }
+        }
+      }
+
+      return nodes
+    }
+
+    console.log(deep1(root));
+    console.log(deep2(root));
+  </script>
+</body>
+</html>

@@ -36,7 +36,7 @@
 
     let unary = fn => val => fn(val)
     let parse = unary(parseInt)
-    console.log(['1.1', '2', '0.3'].map(parse))
+    console.log(['1.1', '2', '0.3'].map(parse))  // [1, 2, 0]
 
     /*
         等同于

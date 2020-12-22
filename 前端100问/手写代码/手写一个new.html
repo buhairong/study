@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function Dog(name) {
+      this.name = name
+    }
+    Dog.prototype.bark = function() {
+      console.log('wangwang')
+    }
+    Dog.prototype.sayName = function() {
+      console.log('my name is ' + this.name)
+    }
+
+    function _new(fn, ...args) {
+      const obj = Object.create(fn.prototype)
+      fn.apply(obj, args)
+      return obj
+    }
+
+    const d = _new(Dog, 'abc')
+    d.bark()
+    d.sayName()
+  </script>
+</body>
+</html>
